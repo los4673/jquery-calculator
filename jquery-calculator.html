@@ -157,7 +157,7 @@ $(document).ready(function() {
         });
         $("#button-power").on("click", function() {
           // Something that will add the operator
-          $("p").append("^")
+          $("p").append("**")
         });
         
 
@@ -165,12 +165,6 @@ $(document).ready(function() {
 
         $("#button-equal").on("click", function() {
           var string = $("p").text();
-          // var stringArray = string.split(" ");
-          // if (string[1] === "^") {
-          //   for (var i = 0; i <= string[2]) {
-          //     string *= string[0];
-          //   }
-          // }
           function addUp(x) {
             result = eval(string);
             $("p").text(result);
