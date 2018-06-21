@@ -164,8 +164,18 @@ $(document).ready(function() {
         //Clear and Equal
 
         $("#button-equal").on("click", function() {
-          // Something that will create text
-          
+          var string = $("p").text();
+          // var stringArray = string.split(" ");
+          // if (string[1] === "^") {
+          //   for (var i = 0; i <= string[2]) {
+          //     string *= string[0];
+          //   }
+          // }
+          function addUp(x) {
+            result = eval(string);
+            $("p").text(result);
+          }
+          addUp(string);
         });
         $("#button-clear").on("click", function() {
           $("p").text("")
