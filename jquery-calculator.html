@@ -80,7 +80,7 @@
             <hr>
             <h1 id="result"></h1>
             <p>
-              
+
             </p>
           </div>
         </div>
@@ -141,18 +141,23 @@ $(document).ready(function() {
 
         $("#button-plus").on("click", function() {
           // Something that will add the operator
+          $("p").append(" + ")
         });
         $("#button-minus").on("click", function() {
           // Something that will add the operator
+          $("p").append(" - ")
         });
         $("#button-multiply").on("click", function() {
           // Something that will add the operator
+          $("p").append(" × ")
         });
         $("#button-divide").on("click", function() {
           // Something that will add the operator
+          $("p").append(" ÷ ")
         });
         $("#button-power").on("click", function() {
           // Something that will add the operator
+          $("p").append("² ")
         });
         
 
